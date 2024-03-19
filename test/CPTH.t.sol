@@ -8,11 +8,10 @@ contract CPTHTest is Test {
     CPTH public cpth;
 
     function setUp() public {
-        cpth = new CPTH();
-        cpth(1000);
+        cpth = new CPTH(1000);
     }
 
-    function test_balanceOf() public {
+    function test_balanceOf() public view {
         assertEq(cpth.balanceOf(address(this)), 1000);
     }
 

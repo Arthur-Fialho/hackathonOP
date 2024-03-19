@@ -1,5 +1,8 @@
 // SPDX-License-Identifier: MIT
 
+import {CPTH} from "./CPTH.sol";
+import {NFTHouse} from "./NFTHouse.sol";
+
 pragma solidity ^0.8.19;
 
 contract RentalAgreement {

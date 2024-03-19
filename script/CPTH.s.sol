@@ -6,8 +6,7 @@ import {CPTH} from "../src/CPTH.sol";
 
 contract CPTHScript is Script {
     function setUp() public {
-        CPTH cpth = new CPTH();
-        cpth(address(this), 1000);
+        CPTH cpth = new CPTH(1000);
     }
 
     function run() public {
