@@ -5,7 +5,14 @@ import {NFTHouse} from "./NFTHouse.sol";
 
 pragma solidity ^0.8.19;
 
+CPTH cpthToken;
+NFTHouse nftHouse;
+
 contract RentalAgreement {
+    IERC20 public cphtToken;
+    IERC721 public nftHouse;
+    uint256 public constant MINIMUM_RENTAL_PERIOD = 90 days;
+
     struct House {
         uint houseId;
         string houseAddress;
